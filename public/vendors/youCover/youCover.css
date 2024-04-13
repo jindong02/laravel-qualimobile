@@ -1,0 +1,85 @@
+.youCover,
+.youCover.active-iframe iframe {
+    display: block
+}
+
+.youCover {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    background-color: #000
+}
+
+.youCover:before {
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    -moz-opacity: .5;
+    -khtml-opacity: .5;
+    -webkit-opacity: .5;
+    opacity: .5;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    filter: alpha(opacity=50);
+    content: " ";
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='60.399' height='77.719' viewBox='0 0 60.399 77.719'%3E%3Cdefs%3E%3Cfilter id='Caminho_38309' x='0' y='0' width='60.399' height='77.719' filterUnits='userSpaceOnUse'%3E%3CfeOffset dy='3' input='SourceAlpha'/%3E%3CfeGaussianBlur stdDeviation='3' result='blur'/%3E%3CfeFlood flood-opacity='0.161'/%3E%3CfeComposite operator='in' in2='blur'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3C/defs%3E%3Cg transform='matrix(1, 0, 0, 1, 0, 0)' filter='url(%23Caminho_38309)'%3E%3Cpath id='Caminho_38309-2' data-name='Caminho 38309' d='M507.368,3558.638l-33.456-25.2A4.471,4.471,0,0,0,466.75,3537v50.759a4.472,4.472,0,0,0,7.186,3.554l33.456-25.556A4.471,4.471,0,0,0,507.368,3558.638Z' transform='translate(-457.75 -3526.53)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");	background-repeat: no-repeat;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -35px;
+    z-index: 3
+}
+
+.youCover.active-iframe img {
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    -webkit-opacity: 0;
+    opacity: 0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    filter: alpha(opacity=0)
+}
+
+.youCover.active-iframe:before {
+    -moz-opacity: 0!important;
+    -khtml-opacity: 0!important;
+    -webkit-opacity: 0!important;
+    opacity: 0!important;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0)!important;
+    filter: alpha(opacity=0)!important;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    -moz-transform: scale(3);
+    transform: scale(3)
+}
+
+.youCover iframe,
+.youCover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.youCover:hover:before {
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    -webkit-opacity: 1;
+    opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+    filter: alpha(opacity=100)
+}
+
+.youCover.fancybox-active img {
+    border: 5px solid #663399
+}
